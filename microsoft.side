@@ -1,0 +1,75 @@
+{
+  "id": "0ec94afa-8920-40a9-a5b8-12bea90ac217",
+  "version": "2.0",
+  "name": "microsoft",
+  "url": "https://arxiv.org/",
+  "tests": [{
+    "id": "d0ab11f9-f596-4668-965e-4d022cb1f9e8",
+    "name": "Untitled",
+    "commands": [{
+      "id": "f7e119dc-d0af-464f-b38d-b51cbd2c0a17",
+      "comment": "",
+      "command": "open",
+      "target": "https://arxiv.org/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4e28d29b-c293-47aa-b8b8-ccfcd48e4c36",
+      "comment": "",
+      "command": "click",
+      "target": "id=main-q-fin",
+      "targets": [
+        ["id=main-q-fin", "id"],
+        ["linkText=Quantitative Finance", "linkText"],
+        ["css=#main-q-fin", "css:finder"],
+        ["xpath=//a[contains(text(),'Quantitative Finance')]", "xpath:link"],
+        ["xpath=//a[@id='main-q-fin']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/ul[5]/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/archive/q-fin')]", "xpath:href"],
+        ["xpath=//ul[5]/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Quantitative Finance')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "afbd80a8-6a56-46da-8362-5f917c8e8050",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=recent",
+      "targets": [
+        ["linkText=recent", "linkText"],
+        ["css=li li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'recent')]", "xpath:link"],
+        ["xpath=//div[@id='content']/ul/li/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/list/q-fin/recent')])[2]", "xpath:href"],
+        ["xpath=//li/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'recent')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "58060dc6-2f2e-4d5e-b834-ac1fc2ef5b74",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=pdf",
+      "targets": [
+        ["linkText=pdf", "linkText"],
+        ["css=dl:nth-child(9) > dt:nth-child(1) a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'pdf')]", "xpath:link"],
+        ["xpath=//div[@id='dlpage']/dl/dt/span/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/pdf/2402.19399')]", "xpath:href"],
+        ["xpath=//span/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'pdf')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "bbc8f4a8-1e80-4ad8-be6d-1e7e2d6bbf9e",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d0ab11f9-f596-4668-965e-4d022cb1f9e8"]
+  }],
+  "urls": ["https://www.google.com/", "https://arxiv.org/"],
+  "plugins": []
+}
